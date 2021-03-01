@@ -1,0 +1,22 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify script.js > bundle.js && live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymir0804/ztm2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ymir0804/ztm2021/issues"
+  },
+  "homepage": "https://github.com/ymir0804/ztm2021#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
