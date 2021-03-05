@@ -33,5 +33,27 @@ React
         + index.js가 메인 js파일
     - index.js
         + WebPack을 지원하기 때문에 import 문 사용
-        + React가 메인이고 웹페이지를 사용하는 경우 ReactDOM    
+        + React가 메인이고 웹페이지를 사용하는 경우 ReactDOM
+    - 메모사항
+        + 태그로 이용할 JS파일을 생성 후 해당 파일명을 태그로 이용하여 출력
+            * Ex) Hello.js인 경우 <Hello/>로 출력
+            * 출력할 JS파일은 render함수를 이용하여 리턴 값으로 HTML태그를 리턴하여 화면에 표시
+            * 이때 사용하는 HTML태그는 DOM이 아닌 ReactDom(JSX)        
+        + 사용원리
+            * Virtual DOM과 실제 DOM과 비교를 하면서 변경사항이 있는지 확인 후 출력
+        + 태그 안에 property를 작성하고 출력하는법
+            - 태그 안에다가 key = {value}를 넣고 해당 컴포넌트에다가 this.props.key를 넣으면 정상적으로 출력 가능
             
+## 3. 리액트 심화
++ Mounting
+    - 마운팅은 root의 컴포넌트를 변경하는 과정
+    - 마운팅의 과정은 4가지로 이루어져있음
+    - 컴포넌트에 Constructor()가 있는지 확인 후 있으면 수행 없으면 무시
+    - 컴포넌트에 componentWillMount() 메소드가 있는지 확인
+    - 컴포넌트에 render()메소드가 있는지 확인
+    - 컴포넌트에 componentDidMount() 메소드가 있는지 확인 
++ Updating
+    - 컴포넌트를 변경할 때 수행 
+        + 예를들어 검색을 할때 창에다가 값을 넣는 것 
++ Unmounting
+    - 컴포넌트가 페이지에서 제거 되었을 때 수행        
